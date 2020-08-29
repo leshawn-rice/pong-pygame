@@ -27,13 +27,8 @@ def endGame(player):
 
 def resetScreen(ball):
     ball.resetPos()
-    displayText("3", 100, (DISPWIDTH / 2 - 10, 50),
-                COLORS['WHITE'], COLORS['BLACK'])
-    updateScreen(1000)
-    displayText("2", 100, (DISPWIDTH / 2 - 10, 50),
-                COLORS['WHITE'], COLORS['BLACK'])
-    updateScreen(1000)
-    displayText("1", 100, (DISPWIDTH / 2 - 10, 50),
+    for i in range(3):
+        displayText(str(3-i), 100, (DISPWIDTH / 2 - 10, 50),
                 COLORS['WHITE'], COLORS['BLACK'])
     updateScreen(1000)
 
