@@ -30,7 +30,7 @@ def resetScreen(ball):
     for i in range(3):
         displayText(str(3-i), 100, (DISPWIDTH / 2 - 10, 50),
                 COLORS['WHITE'], COLORS['BLACK'])
-    updateScreen(1000)
+        updateScreen(1000)
 
 
 def handleScore(player, ball):
